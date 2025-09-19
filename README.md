@@ -1,8 +1,5 @@
 # sgmcmc: a stochastic gradient MCMC package for R
 
-[![Travis-CI Build Status](https://travis-ci.org/STOR-i/sgmcmc.svg?branch=master)](https://travis-ci.org/STOR-i/sgmcmc)
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/sgmcmc)](https://cran.r-project.org/package=tensorflow)
-
 `sgmcmc` implements popular stochastic gradient Markov chain Monte Carlo (SGMCMC) methods including [stochastic gradient Langevin dynamics (SGLD)](http://people.ee.duke.edu/~lcarin/398_icmlpaper.pdf), [stochastic gradient Hamiltonian Monte Carlo (SGHMC)](https://arxiv.org/pdf/1402.4102v2.pdf) and [stochastic gradient Nos&eacute;-Hoover thermostat (SGNHT)](http://papers.nips.cc/paper/5592-bayesian-sampling-using-stochastic-gradient-thermostats.pdf). The package uses automatic differentiation, so all the differentiation needed for the methods is calculated automatically. Control variate methods can be used in order to improve the efficiency of the methods as proposed in the [recent publication](https://arxiv.org/pdf/1706.05439.pdf).
 
 The package is built on top of the [TensorFlow library for R](https://tensorflow.rstudio.com/), which has a lot of support for statistical distributions and operations, which allows a large class of posteriors to be built. More details can be found at the [TensorFlow R library webpage](https://tensorflow.rstudio.com/), also see the [TensorFlow API](https://www.tensorflow.org/api_docs/) for full documentation.
